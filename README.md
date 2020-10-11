@@ -1,9 +1,13 @@
 ### Інструкція становлення та використання даного доповнення
 
-1. Завантажуємо собі локально: git clone https://github.com/PeterShevchuk/test-pieChart.git
+1. Завантажуємо собі локально: 
+  git clone https://github.com/PeterShevchuk/test-pieChart.git
 
-2. Переходимо у проєкт який було заватажено: cd test-pieChart
+2. Переходимо у проєкт який було заватажено: 
+  cd test-pieChart
 
-3. Встановлюємо всі залежності: npm i
+3. Встановлюємо всі залежності: 
+  npm i
 
-4. Запускаємо завантажений проєкт: npm start
+4. Запускаємо завантажений проєкт: 
+  npm start
