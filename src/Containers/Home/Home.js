@@ -5,11 +5,11 @@ import From from "../../Components/From/From";
 import List from "../../Components/List/List";
 
 import "./Home.css";
-const Home = ({ list, save }) => {
+const Home = ({ data }) => {
   return (
     <div>
-      <List list={list} save={save} />
-      <From list={list} save={save} />
+      <List data={data} />
+      <From data={data} />
 
       <h2 className="warning">ВАЖЛИВО! Позиція в якої хочаб одне з полів пусте, не буде враховуватись у розрахунках діаграми!</h2>
     </div>
@@ -19,6 +19,5 @@ const Home = ({ list, save }) => {
 export default Home;
 
 Home.propTypes = {
-  list: PropTypes.array.isRequired,
-  save: PropTypes.func.isRequired,
+  data: PropTypes.object.isRequired,
 };

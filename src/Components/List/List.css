@@ -9,7 +9,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(2, 1fr) 30px;
+  grid-template-columns: repeat(2, 1fr) 20px 30px;
   grid-gap: 1vw;
 }
 .list__item > *,

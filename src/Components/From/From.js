@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 import { initialState } from "../../App";
 
 import "./From.css";
-const From = ({ list, save }) => {
+const From = ({ data }) => {
   const addItem = () => {
-    save([...list, { ...initialState, id: Date.now() }]);
+    data.save([...data.list, { ...initialState, id: Date.now() }]);
   };
   return (
     <div className="addItem">
@@ -20,6 +20,5 @@ const From = ({ list, save }) => {
 export default From;
 
 From.propTypes = {
-  list: PropTypes.array.isRequired,
-  save: PropTypes.func.isRequired,
+  data: PropTypes.object.isRequired,
 };

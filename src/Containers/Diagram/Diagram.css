@@ -16,11 +16,6 @@
   }
 }
 
-@keyframes render2 {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
 .diagram__pie svg {
   min-width: 500px;
   height: 500px;
@@ -45,8 +40,6 @@
 .diagram__pie-chart:hover,
 .hovered {
   stroke-width: 8;
-  stroke-linecap: 1px solid #000000;
-  opacity: 0.8;
 }
 .diagram__list {
   padding: 50px 0;
@@ -58,10 +51,10 @@
   align-items: center;
   margin-bottom: 20px;
 }
+
 .diagram__item > * {
   display: inline-flex;
 }
-.diagram__item:hover > .diagram__item-icon-diagram,
 .hovered .diagram__item-icon-diagram {
   transform: scale(1.4);
 }
@@ -71,6 +64,7 @@
 }
 .diagram__item-name {
   margin-right: 5px;
+  cursor: pointer;
 }
 .diagram__item-name,
 .diagram__item-count {
