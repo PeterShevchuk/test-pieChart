@@ -1,0 +1,44 @@
+.list {
+  margin-bottom: 1vh;
+  grid-gap: 1vh;
+  display: grid;
+}
+
+.list__item {
+  list-style: none;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr) 30px;
+  grid-gap: 1vw;
+}
+.list__item > *,
+.list__item-btn > * {
+  transition: all 0.2s linear;
+}
+.list__item > *:not(:last-child):hover,
+.list__item-btn > *:hover {
+  transform: scale(1.1);
+}
+.list__item-input {
+  padding: 5px 10px;
+  outline: 0;
+  border: 1px solid #cccccc;
+}
+.list__item-btn {
+  display: flex;
+  justify-content: space-around;
+}
+.btn {
+  border: 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 5px 10px;
+}
+.list__item-del {
+  border: 0;
+  background: none;
+  outline: 0;
+}

@@ -1,0 +1,110 @@
+.diagram {
+  display: grid;
+  grid-template-columns: 600px 1fr;
+}
+.test {
+  width: 20px;
+  height: auto;
+  background-color: black;
+}
+.box-pointer-hidden {
+  display: none;
+}
+@keyframes render {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+@keyframes render2 {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+.diagram__pie svg {
+  min-width: 500px;
+  height: 500px;
+  background: #ffffff;
+  border-radius: 10%;
+}
+
+.diagram__pie-chart {
+  fill: none;
+  position: relative;
+  transition: all 0.3s linear;
+  animation-name: render;
+  animation-duration: 1s;
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+.diagram__pie-text {
+  position: absolute;
+  z-index: 9999;
+  display: none;
+}
+.diagram__pie-chart:hover,
+.hovered {
+  stroke-width: 8;
+  stroke-linecap: 1px solid #000000;
+  opacity: 0.8;
+}
+.diagram__list {
+  padding: 50px 0;
+}
+.diagram__item {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.diagram__item > * {
+  display: inline-flex;
+}
+.diagram__item:hover > .diagram__item-icon-diagram,
+.hovered .diagram__item-icon-diagram {
+  transform: scale(1.4);
+}
+.diagram__item-icon-diagram {
+  transition: all 0.3s linear;
+  margin-right: 20px;
+}
+.diagram__item-name {
+  margin-right: 5px;
+}
+.diagram__item-name,
+.diagram__item-count {
+  font-size: 20px;
+  font-weight: 600;
+}
+.diagram__item-icon-close {
+  margin-left: auto;
+}
+.diagram__text {
+  font: 16px/1.4em "Montserrat", Arial, sans-serif;
+  fill: #000;
+  -moz-transform: translateY(0.25em);
+  -ms-transform: translateY(0.25em);
+  -webkit-transform: translateY(0.25em);
+  transform: translateY(0.25em);
+  opacity: 0;
+  transition: all 0.1s linear;
+}
+.diagram__text-count {
+  font-size: 8px;
+  line-height: 1;
+  text-anchor: middle;
+  -moz-transform: translateY(-0.25em);
+  -ms-transform: translateY(-0.25em);
+  -webkit-transform: translateY(-0.25em);
+  transform: translateY(-0.25em);
+}
+.diagram__text-name {
+  font-size: 2px;
+  text-transform: uppercase;
+  text-anchor: middle;
+  -moz-transform: translateY(0.7em);
+  -ms-transform: translateY(0.7em);
+  -webkit-transform: translateY(0.7em);
+  transform: translateY(0.7em);
+}
